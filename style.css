@@ -1,0 +1,11 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(42, 42, 225)
+}
+
+input{
+    width: 300px;
+    height: 25px;
+    border: 3px solid black;
+
+}
