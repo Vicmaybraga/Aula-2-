@@ -7,5 +7,8 @@ input{
     width: 300px;
     height: 25px;
     border: 3px solid black;
+}
 
+#valor{
+    color:red;
 }
