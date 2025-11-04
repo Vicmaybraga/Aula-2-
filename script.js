@@ -4,8 +4,27 @@ function calcular(){
     // passo 3 - alterar o conteudo do que tem na tag SPAN
 
     let valorbr = document.getElementById("valorbr").value;
-    let valorus = valorbr * 5.043;
+   fetch("https://api.frankfurter.dev/v1/latest?base=USD&to=BRL")
+   .then(res => res.json())
+   .then( res2 => {
+    console.log(res2)
+    let valorus = valorbr * res2.rates.BRL;
     document.getElementById("valor").innerHTML = valorus;
+    document.getElementById("Cotacao").innerHTML = res2.rates.BRL;
+    })
+   .catch(err => {
+    alert ("Erro ao receber cotacao do dolar!")
+   })
+
+   
+   
+   
+   
+   
+   
+   
+
+    
 }
    
 
